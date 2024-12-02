@@ -14,9 +14,21 @@ function Layout(props) {
 
   return (
     <div class="p-4 flex flex-col gap-4 ">
-      <div class="">{appName}</div>
-      {props.children}
-      <div>Podnožje</div>
+      <div class="">
+        <div class="text-4xl text-neutral-500 uppercase">{appName}</div>
+      </div>
+
+      <div class="min-h-[75vh] w-10/12 mx-auto">
+        {props.children}
+        </div>
+
+
+
+      <div class="text-center text-xs">
+
+        Sva prava pridržana {new Date().getFullYear()}. Pero i sinovi.
+
+      </div>
     </div>
   );
 }
